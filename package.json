@@ -1,0 +1,20 @@
+{
+  "name": "bapbot-api",
+  "version": "1.0.0",
+  "description": "apifor bapbot slack intergration",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "request": "^2.88.0",
+    "serverless-http": "^2.2.0",
+    "serverless-offline": "^5.10.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "sls offline start --port 4500",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adam Harpur",
+  "license": "MIT"
+}

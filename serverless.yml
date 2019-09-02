@@ -1,0 +1,23 @@
+service: bapbot-api
+provider:
+  name: aws
+  runtime: nodejs10.x
+  stage: dev
+  region: eu-west-1
+
+functions:
+  api:
+    handler: src/api/index.api
+    events: 
+      - http:
+          path: /
+          method: ANY
+      - http:
+          path: /{param+}
+          method: ANY
+plugins:
+  - serverless-offline
+
+package:
+  exclude:
+    - .env
